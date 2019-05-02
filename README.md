@@ -1,4 +1,4 @@
-_Übungsaufgabe zur Veranstaltung [Programmieren 2](https://hsro-wif-prg2.github.io) im [Bachelorstudiengang Wirtschaftsinformatik](https://www.fh-rosenheim.de/technik/informatik-mathematik/wirtschaftsinformatik-bachelor/) an der [Hochschule Rosenheim](http://www.fh-rosenheim.de)._
+_Übungsaufgabe zur Veranstaltung [Objektorientiertes Programmieren](https://hsro-wif-oop.github.io) im [Bachelorstudiengang Wirtschaftsinformatik](https://www.th-rosenheim.de/technik/informatik-mathematik/wirtschaftsinformatik-bachelor/) an der [Hochschule Rosenheim](http://www.th-rosenheim.de)._
 
 
 # Rekursion
@@ -12,7 +12,7 @@ Vorgehensweise:
 2. Identifizieren Sie den Rekursionsfall; wann ist die Lösung nicht-trivial, aber auf eine andere Lösung zurückzuführen?
 3. Welches sind die Parameter für die Methode, und wie müssen diese im Rekursionsfall angepasst werden?
 
-> **Hinweis:** Da die Signaturen bereits vorgegeben sind, ist oft ist eine Hilfsmethode nötig, um die eigentliche Rekursion zu realisieren.
+> **Hinweis:** Da die Signaturen bereits vorgegeben sind, ist oft eine Hilfsmethode nötig, um die eigentliche Rekursion zu realisieren.
 
 
 ## Rekursion für Arrays
@@ -28,7 +28,7 @@ Welche Parameter sind für die Hilfsfunktion sinnvoll?
 Implementieren Sie die Methoden `addRek` und `containsRek` der generischen Klasse `Liste`.
 Als Hilfestellung sind die beiden iterativen Implementierungen (`add` und `contains`) gegeben.
 
-> ** Hinweis:** Sie können die Hilfsmethoden entweder in der Klasse `Liste` anlegen, oder aber die Klasse `Liste.Element` erweitern.
+> **Hinweis:** Sie können die Hilfsmethoden entweder in der Klasse `Liste` anlegen, oder aber die Klasse `Liste.Element` erweitern.
 
 
 ## Rekursion für Binärbäume
