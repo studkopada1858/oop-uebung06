@@ -29,7 +29,20 @@ class Liste<T> {
 	 * Wie `add`, aber rekursiv zu implementieren.
 	 */
 	void addRek(T value) {
-		throw new UnsupportedOperationException();
+		if (first == null) {
+			first = new Element(value);
+			return;
+		}else{
+			haddRek(value, first);
+		}
+	}
+
+	void haddRek(T value, Element e){
+		if(e.next==null){
+			e.next=new Element(value);
+		}else if(e.next!=null){
+			haddRek(value,e.next);
+		}
 	}
 
 	/**
@@ -53,8 +66,24 @@ class Liste<T> {
 	 * Wie `contains`, nur rekursiv zu implementieren.
 	 */
 	boolean containsRek(T value) {
-		throw new UnsupportedOperationException();
+		if (first == null)
+			return false;
+		else{return hcontainsRek(value, first);
 	}
+	}
+
+	boolean hcontainsRek(T value, Element it){
+
+		if(it.value==value)
+			return true;
+
+			if(it.next==null)
+				return false;
+
+		else{ return hcontainsRek(value,it.next);
+		}
+
+		}
 
 	/**
 	 * Gibt eine Stringrepraesentation der Liste zurück, z.B. [] oder [1, 2, 3]
@@ -79,6 +108,18 @@ class Liste<T> {
 	 * Zusatzaufgabe: Wie `toString`, nur rekursiv zu implementieren.
 	 */
 	String toStringRek() {
-		throw new UnsupportedOperationException();
+		if (first == null)
+			return "[]";
+		StringBuilder sb = new StringBuilder();
+		return sb.append("[").append(first.value+""+htoStringRek(first.next) ).toString();
+
+	}
+
+	String htoStringRek( Element it){
+		if (it==null)
+			return"]";
+		else{
+			return ", "+ it.value+htoStringRek(it.next);
+		}
 	}
 }
